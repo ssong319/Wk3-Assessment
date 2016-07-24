@@ -1,0 +1,13 @@
+
+input {
+    background-color: yellow;
+}
+
+#last {
+    font-weight: bold;
+}
+
+p {
+    border: 1px solid orange;
+    margin-right: 650px;
+}

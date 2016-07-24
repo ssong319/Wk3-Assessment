@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %} Skills-HTML-CSS {% endblock %}
+{% block css %} <link rel="stylesheet" href="/static/styles.css"> {% endblock %}
+
+{% block content %} 
+
+<h1>Job Application</h1>
+    <p>Thank you for applying to our company. To start off, tell us some information about yourself.</p>
+    <form action="/application" method="POST">
+        <label for="first">First Name: </label>
+        <input id="first" type="text" name="firstname">
+        <br><br>
+        <label for="last">Last Name: </label>
+        <input id="last" type="text" name="lastname">
+        <br><br>
+        <label for="salary">What is your salary requirement? </label>
+        <input id="salary" type="text" name="salaryreq">
+        <br><br>
+        <label for="role">What job are you applying for?</label>
+        <select id="role" name="job">
+            <option value="Software Engineer">Software Engineer</option>
+            <option value="QA Engineer">QA Engineer</option>
+            <option value="Product Manager">Product Manager</option>
+        </select>
+        <br><br>
+        <input type="submit">
+    </form>
+
+{% endblock %}
+
